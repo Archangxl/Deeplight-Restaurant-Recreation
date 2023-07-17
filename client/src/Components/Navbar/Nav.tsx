@@ -16,8 +16,7 @@ const Nav = () => {
     }
 
     const menuContainer = {
-        display: 'flex',
-        flexDirection: 'column',
+        display: 'grid',
         padding: '15px 20px',
         backgroundColor: '#f5f5f5',
     }
@@ -87,9 +86,9 @@ const Nav = () => {
                 toggleMenu == true &&
                 <>
                     <div style={menuContainer}>
-                            <Link style={menuLink} to="/" onClick={(e) => {e.preventDefault(); handleButtonClick();}}>Home</Link>
-                            <Link style={menuLink}  to="/About" onClick={(e) => {e.preventDefault(); handleButtonClick();}}>About</Link>
-                            <Link style={menuLink}  to="/Gallery" onClick={(e) => {e.preventDefault(); handleButtonClick();}}>Gallery</Link>
+                            <Link style={menuLink} to="/" /*onClick={(e) => {e.preventDefault(); console.log(1); handleButtonClick();}}*/>Home</Link>
+                            <Link style={menuLink} to="/About" onClick={(e) => {e.preventDefault(); console.log(2); handleButtonClick();}}>About</Link>
+                            <Link style={menuLink} to="/Gallery" onClick={(e) => {e.preventDefault(); handleButtonClick();}}>Gallery</Link>
                             <Link style={menuLink} to="/Testimonials" onClick={(e) => {e.preventDefault(); handleButtonClick();}}>Testimonials</Link>
                             <Link style={lastMenuLink} to="/Contact" onClick={(e) => {e.preventDefault(); handleButtonClick();}}>Contact</Link>
                     </div>
