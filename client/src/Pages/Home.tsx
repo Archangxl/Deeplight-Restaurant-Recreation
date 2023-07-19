@@ -1,23 +1,37 @@
 
+import '../Components/Main/HomeStyles.css';
 
 const Home = () =>  {
 
-    
-    const parallax ={
-        backgroundImage: 'url(https://websitedemos.net/restaurant-04/wp-content/uploads/sites/194/2018/05/hero-bg-free-img.jpg)',
-        minHeight: '1104px',
-        backgroundAttachment: 'fixed', 
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repear',
-        backgroundSize: 'cover'
-    }
 
     return (
-        <>
-            <div style={parallax}>
+        <main>
+            <section className='parallax'>
+                <div className='parallax-container'>
+                    <div className='parallax-container-content'>
+                        <p className='special-font'>Delightful Experience</p>
+                    </div>
+                    <div className='parallax-container-content'>
+                        <p>Welome to "Deeplight Restaurant"</p>
+                    </div>
+                    <div className='parallax-container-content'>
+                        <button>Reservation</button>
+                    </div>
+                </div>
+            </section>
 
-            </div>
-        </>
+            <section>
+                <div>
+                <img></img>
+                </div>
+            
+                <p>honest, flavorful food</p>
+                <p>A Few Words About Our Restaurant</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+                <button>Read More</button>
+            </section>
+
+        </main>
     );
 }
 export default Home;

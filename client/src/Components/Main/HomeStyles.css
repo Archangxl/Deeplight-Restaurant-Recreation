@@ -1,0 +1,29 @@
+
+.parallax {
+    background-image: url("../../Images/1stHomePageImage.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.parallax-container-content {
+
+}
+
+.special-font {
+    font-family: 'Yesteryear', cursive !important;
+}
