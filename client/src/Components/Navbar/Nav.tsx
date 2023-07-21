@@ -1,7 +1,7 @@
 import Logo from '../../Images/DeeplightRestaurantLogo.png';
 import MenuToggle from '../../Images/MenuToggleIcon.png';
 import RemoveMenu from '../../Images/RemoveMenu.png'
-import {useState} from 'react';
+import {useState, useEffect, useCallback} from 'react';
 import {Link} from 'react-router-dom';
 import '../../Styles/NavStyles.css';
 
@@ -9,6 +9,18 @@ const Nav = () => {
 
     const [toggleMenu, setToggleMenu] = useState(false);
     const [currentPage, setCurrentPage] = useState('/');
+    const [windowSize, setWindowSize] = useState(window.innerWidth);
+
+    const handleWindowResize = useCallback(() => {
+        setWindowSize(window.innerWidth);
+    }, []);
+    
+    useEffect(() => {
+        window.addEventListener('resize', handleWindowResize);
+        return () => {
+            window.removeEventListener('resize', handleWindowResize);
+        };
+    }, [handleWindowResize]);
 
     const handleButtonClick = () => {
         if (toggleMenu) {
@@ -18,27 +30,41 @@ const Nav = () => {
         }
     }
 
+
     return (
         <>
-            <nav className="navContainer">
-                <img src={Logo}></img>
             {
-                toggleMenu == false ?
+                windowSize > 920 && 
                 <>
-                    <button className='menuButton' onClick={(e) => {e.preventDefault(); handleButtonClick();}}>
-                        <img className='grabAndRemoveMenu' src={MenuToggle}></img>
-                    </button>
-                </>
-
-                :
-
-                <>
-                    <button className='menuButton' onClick={(e) => {e.preventDefault(); handleButtonClick();}}>
-                        <img className='grabAndRemoveMenu' src={RemoveMenu}></img>
-                    </button>
+                        <nav className="navContainer">
+                            <img className='logo' src={Logo}></img>
+                        </nav>               
                 </>
             }
-            </nav>
+            {
+                windowSize <= 920 &&
+                <>
+                    <nav className="navContainer">
+                        <img className='logo' src={Logo}></img>
+                        {
+                            toggleMenu == false ?
+                            <>
+                                <button className='menuButton' onClick={(e) => {e.preventDefault(); handleButtonClick();}}>
+                                    <img className='grabAndRemoveMenu' src={MenuToggle}></img>
+                                </button>
+                            </>
+
+                            :
+
+                            <>
+                                <button className='menuButton' onClick={(e) => {e.preventDefault(); handleButtonClick();}}>
+                                    <img className='grabAndRemoveMenu' src={RemoveMenu}></img>
+                                </button>
+                            </>
+                        }
+                    </nav>
+                </>
+            }
             {
                 toggleMenu == true &&
                 <>
