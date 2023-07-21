@@ -38,37 +38,9 @@ const Nav = () => {
                 <>
                         <nav className="navContainer">
                             <img className='logo' src={Logo}></img>
-                        </nav>               
-                </>
-            }
-            {
-                windowSize <= 920 &&
-                <>
-                    <nav className="navContainer">
-                        <img className='logo' src={Logo}></img>
-                        {
-                            toggleMenu == false ?
-                            <>
-                                <button className='menuButton' onClick={(e) => {e.preventDefault(); handleButtonClick();}}>
-                                    <img className='grabAndRemoveMenu' src={MenuToggle}></img>
-                                </button>
-                            </>
+                        </nav>     
 
-                            :
-
-                            <>
-                                <button className='menuButton' onClick={(e) => {e.preventDefault(); handleButtonClick();}}>
-                                    <img className='grabAndRemoveMenu' src={RemoveMenu}></img>
-                                </button>
-                            </>
-                        }
-                    </nav>
-                </>
-            }
-            {
-                toggleMenu == true &&
-                <>
-                    <div className="menuContainer">
+                        <div className="menuContainer">
                             {currentPage == '/' ?
                                 <p className='menuItems' onClick={(e) => {e.preventDefault(); setCurrentPage('/'); handleButtonClick(); }} ><Link className='link' id="currentPage" to="/">Home</Link></p>
                                 :
@@ -104,7 +76,73 @@ const Nav = () => {
                                 :
                                     <p className='menuItems lastMenuItem' onClick={(e) => {e.preventDefault(); setCurrentPage('/Contact'); handleButtonClick();}} ><Link className='link' to="/Contact">Contact</Link></p>
                             }
-                    </div>
+                        </div>
+                </>
+            }
+            {
+                windowSize <= 920 &&
+                <>
+                    <nav className="navContainer">
+                        <img className='logo' src={Logo}></img>
+                        {
+                            toggleMenu == false ?
+                            <>
+                                <button className='menuButton' onClick={(e) => {e.preventDefault(); handleButtonClick();}}>
+                                    <img className='grabAndRemoveMenu' src={MenuToggle}></img>
+                                </button>
+                            </>
+
+                            :
+
+                            <>
+                                <button className='menuButton' onClick={(e) => {e.preventDefault(); handleButtonClick();}}>
+                                    <img className='grabAndRemoveMenu' src={RemoveMenu}></img>
+                                </button>
+                            </>
+                        }
+                    </nav>
+                    {
+                        toggleMenu == true &&
+                        <>
+                            <div className="menuContainer">
+                                    {currentPage == '/' ?
+                                        <p className='menuItems' onClick={(e) => {e.preventDefault(); setCurrentPage('/'); handleButtonClick(); }} ><Link className='link' id="currentPage" to="/">Home</Link></p>
+                                        :
+                                        <p className='menuItems' onClick={(e) => {e.preventDefault(); setCurrentPage('/'); handleButtonClick(); }} ><Link className='link' to="/">Home</Link></p>
+                                    }
+                                    {
+                                        currentPage == '/Menu' ?
+                                            <p className='menuItems' onClick={(e) => {e.preventDefault(); setCurrentPage('/Menu'); handleButtonClick();}} ><Link className='link' id="currentPage" to="/Menu">Menu</Link></p>
+                                        :
+                                            <p className='menuItems' onClick={(e) => {e.preventDefault(); setCurrentPage('/Menu'); handleButtonClick();}} ><Link className='link' to="/Menu">Menu</Link></p>
+                                    }
+                                    {
+                                        currentPage == '/About' ?
+                                            <p className='menuItems' onClick={(e) => {e.preventDefault(); setCurrentPage('/About'); handleButtonClick();}} ><Link className='link' id="currentPage" to="/About">About</Link></p>
+                                        :
+                                            <p className='menuItems' onClick={(e) => {e.preventDefault(); setCurrentPage('/About'); handleButtonClick();}} ><Link className='link' to="/About">About</Link></p>
+                                    }
+                                    {
+                                        currentPage == '/Gallery' ?
+                                            <p className='menuItems' onClick={(e) => {e.preventDefault(); setCurrentPage('/Gallery'); handleButtonClick();}} ><Link className='link' id="currentPage" to="/Gallery">Gallery</Link></p>
+                                        :
+                                            <p className='menuItems' onClick={(e) => {e.preventDefault(); setCurrentPage('/Gallery'); handleButtonClick();}} ><Link className='link' to="/Gallery">Gallery</Link></p>
+                                    }
+                                    {
+                                        currentPage == '/Testimonials' ?
+                                            <p className='menuItems' onClick={(e) => {e.preventDefault(); setCurrentPage('/Testimonials'); handleButtonClick();}} ><Link className='link' id="currentPage" to="/Testimonials">Testimonials</Link></p>
+                                        :
+                                            <p className='menuItems' onClick={(e) => {e.preventDefault(); setCurrentPage('/Testimonials'); handleButtonClick();}} ><Link className='link' to="/Testimonials">Testimonials</Link></p>
+                                    }
+                                    {
+                                        currentPage == '/Contact' ?
+                                            <p className='menuItems lastMenuItem' onClick={(e) => {e.preventDefault(); setCurrentPage('/Contact'); handleButtonClick();}} ><Link className='link' id="currentPage" to="/Contact">Contact</Link></p>
+                                        :
+                                            <p className='menuItems lastMenuItem' onClick={(e) => {e.preventDefault(); setCurrentPage('/Contact'); handleButtonClick();}} ><Link className='link' to="/Contact">Contact</Link></p>
+                                    }
+                            </div>
+                        </>
+                    }
                 </>
             }
         </>
