@@ -1,43 +1,99 @@
+:root {
+    --mandy: #eb5058;
+}
+
+body {
+    min-width: 350px;
+}
+
 .navContainer {
-    padding: 15px 20px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-.menuContainer {
-    display: grid;
-    background-color: #f9f9f9;
+@media screen and (max-width: 919px) {
+    .navContainer {
+        padding: 15px 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .menuContainer {
+        display: grid;
+        background-color: #f9f9f9;
+    }
+    
+    .grabAndRemoveMenu {
+        background-color: var(--mandy);
+        padding: '7.5px';
+        width: 25px;
+        height: 25px;
+    }
+    
+    .menuButton {
+        border: none;
+        background-color: var(--mandy);
+        border-radius: 2px;
+        padding: 8.44px 8.44px 4.44px 8.44px;
+    }
+    
+    .menuItems {
+        display: flex;
+        align-items: center;
+        height: 43.77px;
+        padding: 0px 20px;
+        border-top: #DDDDDD solid 1px;
+    }
 }
 
-.grabAndRemoveMenu {
-    background-color: #eb5058;
-    padding: '7.5px';
-    width: 25px;
-    height: 25px;
+@media screen and (min-width: 920px) {
+
+    .navContainer {
+        justify-content: center; 
+        align-items: center;
+        padding: 16px 0px;
+        height: 70px;
+    }
+
+    .menuContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+
+    }
+    .link {
+        font-size: 16px !important;
+        padding: 0px 16px;
+    }
 }
 
-.menuButton {
-    border: none;
-    background-color: #eb5058;
-    border-radius: 2px;
-    padding: 5px 5px 1.5px 5px;
+@media screen and (min-width: 545px) {
+
+    .logo {
+        height: 54px;
+        width: 164px;
+    }
 }
 
-.menuItems {
-    padding: 10px 20px;
-    border-top: #DDDDDD solid 1px;
+@media screen and (max-width: 544px) {
+    .navContainer {
+        height: 44.45px;
+    }
+
+    .logo {
+        width: 135px;
+    }
 }
 
 .link {
     text-decoration: none;
     color: #9E9E9E;
     font-size: 12px;
-    font-weight: 900;
+    font-weight: bolder;
 }
 
 .link:hover {
-    color: #eb5058;
+    color: var(--mandy);
 }
 
 
@@ -46,5 +102,5 @@
 }
 
 #currentPage {
-    color: #eb5058 !important; 
+    color: var(--mandy) !important; 
 }
