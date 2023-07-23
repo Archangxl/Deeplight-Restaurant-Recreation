@@ -4,10 +4,11 @@ import RemoveMenu from '../../Images/RemoveMenu.png'
 import {useState} from 'react';
 import {Link} from 'react-router-dom';
 import '../../Styles/NavStyles.css';
+import useToggleMenu from '../../Tools/useToggleMenu';
 
 const Nav = () => {
 
-    const [toggleMenu, setToggleMenu] = useState(false);
+    const {setToggleMenu, toggleMenu} = useToggleMenu();
     const [currentPage, setCurrentPage] = useState('/');
 
     const handleButtonClick = () => {
