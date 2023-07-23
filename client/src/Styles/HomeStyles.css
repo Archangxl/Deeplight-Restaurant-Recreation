@@ -1,23 +1,29 @@
-
-.parallax {
-    background-image: url("../../Images/1stHomePageImage.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 1100px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media screen and (max-width: 919px) {
+    
+}
+/*
+@media screen and (min-width: 1025px) {
+    .parallax {
+        background-image: url('../Images/1stHomePageImage.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 707.15px;
+    
+        display: flex;
+    }
 }
 
 .parallax-container{
+    flex: 1;
+    opacity: 0.5;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
+    color: white;
+    background-color: black;
 }
 
 .parallax-container-content {
@@ -26,4 +32,22 @@
 
 .special-font {
     font-family: 'Yesteryear', cursive !important;
+}
+
+*/
+
+main {
+    display: grid;
+}
+
+.main-containers { 
+    background-color: black;
+    height: auto;
+    min-height: 500px;
+}
+
+.main-containers-1 {
+    background-color: white;
+    height: auto;
+    min-height: 500px;
 }
