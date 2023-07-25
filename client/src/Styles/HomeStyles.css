@@ -1,7 +1,7 @@
 @media screen and (max-width: 919px) {
     
 }
-/*
+
 @media screen and (min-width: 1025px) {
     .parallax {
         background-image: url('../Images/1stHomePageImage.jpg');
@@ -25,7 +25,7 @@
     color: white;
     background-color: black;
 }
-
+/*
 .parallax-container-content {
 
 }
@@ -35,19 +35,3 @@
 }
 
 */
-
-main {
-    display: grid;
-}
-
-.main-containers { 
-    background-color: black;
-    height: auto;
-    min-height: 500px;
-}
-
-.main-containers-1 {
-    background-color: white;
-    height: auto;
-    min-height: 500px;
-}
