@@ -46,9 +46,13 @@ const Home = () =>  {
                     <div className='parallax-container-content'>
                         <button>Reservation</button>
                     </div>
-                </div>
 
+                    <div className='divider-special'></div>
+
+                </div>
             </section>
+
+            <div className='divider'></div>
 
             <section className='main-container'>
                 
@@ -65,17 +69,25 @@ const Home = () =>  {
 
             </section>
 
+            <div className='divider'></div>
+
             <section className='main-container'>
                 
             </section>
+
+            <div className='divider'></div>
             
             <section className='main-container'>
                 
             </section>
+
+            <div className='divider'></div>
             
             <section className='main-container'>
                 
             </section>
+
+            <div className='divider'></div>
 
             <section className='main-container'>
                 
