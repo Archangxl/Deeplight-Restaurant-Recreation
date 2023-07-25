@@ -1,27 +1,17 @@
 import Logo from '../../Images/DeeplightRestaurantLogo.png';
 import MenuToggle from '../../Images/MenuToggleIcon.png';
 import RemoveMenu from '../../Images/RemoveMenu.png'
-import {useState, useEffect, useCallback} from 'react';
+import {useState} from 'react';
 import {Link} from 'react-router-dom';
 import '../../Styles/NavStyles.css';
 import useToggleMenu from '../../Tools/useToggleMenu';
+import useHandleWindowSize from '../../Tools/useHandleWindowSize';
 
 const Nav = () => {
 
     const {setToggleMenu, toggleMenu} = useToggleMenu();
     const [currentPage, setCurrentPage] = useState('/');
-    const [windowSize, setWindowSize] = useState(window.innerWidth);
-
-    const handleWindowResize = useCallback(() => {
-        setWindowSize(window.innerWidth);
-    }, []);
-    
-    useEffect(() => {
-        window.addEventListener('resize', handleWindowResize);
-        return () => {
-            window.removeEventListener('resize', handleWindowResize);
-        };
-    }, [handleWindowResize]);
+    const {windowSize} = useHandleWindowSize();
 
     const handleButtonClick = () => {
         if (toggleMenu) {

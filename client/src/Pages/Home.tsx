@@ -1,8 +1,10 @@
 
 import '../Styles/HomeStyles.css'
+import useHandleWindowSize from '../Tools/useHandleWindowSize';
 
 const Home = () =>  {
 
+    const {windowSize} = useHandleWindowSize();
 
     return (
         <main>
@@ -48,8 +50,8 @@ const Home = () =>  {
                     </div>
 
                     <div className='divider-special'></div>
-
                 </div>
+
             </section>
 
             <div className='divider'></div>
@@ -72,13 +74,65 @@ const Home = () =>  {
             <div className='divider'></div>
 
             <section className='main-container'>
-                
+                    <p>eat good food</p>
+                    <p>Have a quick look at the menu</p>
+                    <p>Divider line thing</p>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+
+                    <div className='picture-menu-side-by-side'>
+
+                        <div>
+                            <img></img>
+                        </div>
+
+                        <div>
+                            <p>Chef Reccomend</p>
+
+                            <p>Lamb Salad with Fregola (border dotted black line) $32.5</p>
+                            <p>Lamb / Fregola</p>
+
+                            <p>Pappardelle with Sea Urchin & Cauliflower (border dotted black line) $59.5</p>
+                            <p>Pappardelle / Urchin / Cauliflower</p>
+
+                            <p>Scallop Sashimi with Meyer Lemon Confit (border dotted black line) $ $40.5</p>
+                            <p>Sashimi / Lemon</p>
+
+                            <p>Braised Leeks with Mozzarella & Fried Egg (border dotted black line)</p>
+                            <p>Leeks / Mozzarella / Egg $37.5</p>
+                        </div>
+
+                    </div>
+
             </section>
 
             <div className='divider'></div>
             
             <section className='main-container'>
-                
+
+                <div className='picture-menu-side-by-side'>
+
+                    <div>
+                        <img></img>
+                    </div>
+
+                    <div>
+                        <p>Main Courses</p>
+
+                        <p>Pork Rillette Hand Pies (border dotted black line) $19.5</p>
+                        <p>Pork / Pies</p>
+
+                        <p>Island Duck with Mulberry Mustard (border dotted black line) $25.5</p>
+                        <p>Duck / Mustard</p>
+
+                        <p>Malted Custard French Toast (border dotted black line) $37.5</p>
+                        <p>Custard / Toast</p>
+
+                        <p>Pasta with Lamb Ragù (border dotted black line) $29.5</p>
+                        <p>Pasta / Lamb</p>
+                    </div>
+
+                </div>
+
             </section>
 
             <div className='divider'></div>
