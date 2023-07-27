@@ -138,13 +138,36 @@ const Home = () =>  {
             <div className='divider'></div>
             
             <section className='main-container'>
-                
+
+                <div>
+                    <img></img>
+                </div>
+
+                <div>  
+                    <p>Our Customers Fall In Love With Us</p>
+                    <p>“ by far the best occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque. ”</p>
+                    <p>Randy Morgan</p>
+                </div>
+
             </section>
 
             <div className='divider'></div>
 
             <section className='main-container'>
-                
+
+                <div>
+                    <img></img>
+                </div>
+
+                <div>
+                    <p>Join Us</p>
+                    <p>Book A Table Now, Come And See Us</p>
+
+                    <div>
+                        <button>Reservation</button>
+                    </div>
+                </div>
+
             </section>
 
         </main>
