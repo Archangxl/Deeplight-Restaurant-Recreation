@@ -1,10 +1,18 @@
-@media screen and (max-width: 919px) {
+@media screen and (max-width: 1024px) {
+        .welcome {
+        background-image: url('../Images/Home/1stHomePageImage.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 707.15px;
     
+        display: flex;
+    }
 }
 
 @media screen and (min-width: 1025px) {
-    .parallax {
-        background-image: url('../Images/1stHomePageImage.jpg');
+    .welcome {
+        background-image: url('../Images/Home/1stHomePageImage.jpg');
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -15,7 +23,7 @@
     }
 }
 
-.parallax-container{
+.welcome-container{
     flex: 1;
     opacity: 0.5;
     display: flex;
@@ -26,7 +34,7 @@
     background-color: black;
 }
 
-.parallax-container-content {
+.welcome-container-content {
 
 }
 

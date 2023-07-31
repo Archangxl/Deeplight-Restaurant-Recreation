@@ -1,6 +1,6 @@
-import Logo from '../../Images/DeeplightRestaurantLogo.png';
-import MenuToggle from '../../Images/MenuToggleIcon.png';
-import RemoveMenu from '../../Images/RemoveMenu.png'
+import Logo from '../../Images/Nav/DeeplightRestaurantLogo.png';
+import MenuToggle from '../../Images/Nav/MenuToggleIcon.png';
+import RemoveMenu from '../../Images/Nav/RemoveMenu.png'
 import {useState} from 'react';
 import {Link} from 'react-router-dom';
 import '../../Styles/NavStyles.css';

@@ -1,6 +1,7 @@
 
 import '../Styles/HomeStyles.css'
 import useHandleWindowSize from '../Tools/useHandleWindowSize';
+import Image from '../Images/Home/1stHomePageImage.jpg';
 
 const Home = () =>  {
 
@@ -11,16 +12,16 @@ const Home = () =>  {
             {
                 windowSize > 1024 ?
 
-                <section className='main-container parallax'>
-
-                    <div className='parallax-container'>
-                        <div className='parallax-container-content'>
+                <section className='main-container welcome'>
+                    
+                    <div className='welcome-container'>
+                        <div className='welcome-container-content'>
                             <p className='special-font'>Delightful Experience</p>
                         </div>
-                        <div className='parallax-container-content'>
+                        <div className='welcome-container-content'>
                             <p>Welome to "Deeplight Restaurant"</p>
                         </div>
-                        <div className='parallax-container-content'>
+                        <div className='welcome-container-content'>
                             <button>Reservation</button>
                         </div>
 
@@ -31,7 +32,23 @@ const Home = () =>  {
 
                 :
 
-                null
+                <section className='main-container welcome'>
+
+                    <div className='welcome-container'>
+
+                        <div className='welcome-container-content'>
+                            <p className='special-font'>Delightful Experience</p>
+                        </div>
+                        <div className='welcome-container-content'>
+                            <p>Welome to "Deeplight Restaurant"</p>
+                        </div>
+                        <div className='welcome-container-content'>
+                            <button>Reservation</button>
+                        </div>
+
+                    </div>
+
+                </section>
             }
 
             <div className='divider'></div>
