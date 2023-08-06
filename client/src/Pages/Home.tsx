@@ -15,17 +15,18 @@ const Home = () =>  {
                 <section className='main-container welcome'>
                     
                     <div className='welcome-container'>
-                        <div className='welcome-container-content'>
-                            <p className='special-font'>Delightful Experience</p>
+                        <div className='welcome-container-message'>
+                            <p className='special-font'>delightful experiences</p>
                         </div>
-                        <div className='welcome-container-content'>
-                            <p>Welome to "Deeplight Restaurant"</p>
+                        <div className='welcome-container-title'>
+                            <p>Welcome to " Deeplight Restaurant "</p>
                         </div>
-                        <div className='welcome-container-content'>
+                        <div className='welcome-container-button'>
                             <button>Reservation</button>
                         </div>
-
-                        <div className='divider-special'></div>
+                        <div className='welcome-container-divider'>
+                            
+                        </div>
                     </div>
 
                 </section>
@@ -35,17 +36,18 @@ const Home = () =>  {
                 <section className='main-container welcome'>
 
                     <div className='welcome-container'>
-
-                        <div className='welcome-container-content'>
+                        <div className='welcome-container-message'>
                             <p className='special-font'>Delightful Experience</p>
                         </div>
-                        <div className='welcome-container-content'>
-                            <p>Welome to "Deeplight Restaurant"</p>
+                        <div className='welcome-container-title'>
+                            <p>Welcome to "Deeplight Restaurant"</p>
                         </div>
-                        <div className='welcome-container-content'>
+                        <div className='welcome-container-button'>
                             <button>Reservation</button>
                         </div>
-
+                        <div className='welcome-container-divider'>
+                            <p>Hello</p>
+                        </div>
                     </div>
 
                 </section>
