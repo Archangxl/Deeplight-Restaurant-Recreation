@@ -1,7 +1,10 @@
-
+/*
+Each Section has a 1024px / 1025px varient 
+*/
 import '../Styles/HomeStyles.css'
 import useHandleWindowSize from '../Tools/useHandleWindowSize';
-import Image from '../Images/Home/1stHomePageImage.jpg';
+import WelcomeSectionLessThan1024px from '../Components/Main/HomePage/welcomeSectionLessThan1024px';
+import WelcomeSectionGreaterThan1025px from '../Components/Main/HomePage/WelcomeSectionGreaterThan1025px';
 
 const Home = () =>  {
 
@@ -11,46 +14,9 @@ const Home = () =>  {
         <main>
             {
                 windowSize > 1024 ?
-
-                <section className='main-container welcome'>
-                    
-                    <div className='welcome-container'>
-                        <div className='welcome-container-message'>
-                            <p className='special-font'>delightful experiences</p>
-                        </div>
-                        <div className='welcome-container-title'>
-                            <p>Welcome to " Deeplight Restaurant "</p>
-                        </div>
-                        <div className='welcome-container-button'>
-                            <button>Reservation</button>
-                        </div>
-                        <div className='welcome-container-divider'>
-                            
-                        </div>
-                    </div>
-
-                </section>
-
+                <WelcomeSectionGreaterThan1025px />
                 :
-
-                <section className='main-container welcome'>
-
-                    <div className='welcome-container'>
-                        <div className='welcome-container-message'>
-                            <p className='special-font'>Delightful Experience</p>
-                        </div>
-                        <div className='welcome-container-title'>
-                            <p>Welcome to "Deeplight Restaurant"</p>
-                        </div>
-                        <div className='welcome-container-button'>
-                            <button>Reservation</button>
-                        </div>
-                        <div className='welcome-container-divider'>
-                            <p>Hello</p>
-                        </div>
-                    </div>
-
-                </section>
+                <WelcomeSectionLessThan1024px />
             }
 
             <div className='divider'></div>
@@ -69,7 +35,7 @@ const Home = () =>  {
                 </div>
 
             </section>
-
+{/*
             <div className='divider'></div>
 
             <section className='main-container'>
@@ -168,7 +134,7 @@ const Home = () =>  {
                 </div>
 
             </section>
-
+*/}
         </main>
     );
 }
