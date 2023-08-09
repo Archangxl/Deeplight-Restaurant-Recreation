@@ -1,9 +1,16 @@
-:root {
-    --mandy: #eb5058;
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+    font-family: "Playfair Display", serif;
 }
 
 body {
-    min-width: 350px;
+    min-width: 400px;
+}
+
+:root {
+    --mandy: #eb5058;
 }
 
 .navContainer {
@@ -39,7 +46,7 @@ body {
     .menuItems {
         display: flex;
         align-items: center;
-        height: 43.77px;
+        height: 36px;
         padding: 0px 20px;
         border-top: #DDDDDD solid 1px;
     }

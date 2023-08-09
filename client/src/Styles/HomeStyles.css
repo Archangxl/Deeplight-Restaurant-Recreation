@@ -1,11 +1,8 @@
-body {
-    min-width: 400px;
-}
 
 @media screen and (max-width: 1024px) {
 
 
-    .welcome {
+    .Welcome {
         background-image: url('../Images/Home/1stHomePageImage.jpg');
         background-position: center;
         background-repeat: no-repeat;
@@ -15,16 +12,23 @@ body {
         display: flex;
     }
 
-    .welcome-container{
-        flex: 1;
+    .Welcome-container{
         display: flex;
         flex-direction: column;
-        color: white;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Welcome-content {
+        flex: 1;
+
+        display: flex;
+
     }
 }
 
 @media screen and (min-width: 1025px) {
-    .welcome {
+    .Welcome {
         background-image: url('../Images/Home/1stHomePageImage.jpg');
         background-attachment: fixed;
         background-position: center;
@@ -35,52 +39,12 @@ body {
         display: flex;
     }
 
-    .welcome:hover {
-        opacity: 1;
-    }
-
-    .welcome-container-message {
-        flex: 1.35;
-
-        display: flex;
-        justify-content: center;
-        align-items: end;
-    }
-
-    .welcome-container-message p {
-        font-size: 1.9rem !important;
-    }
-    
-    .welcome-container-title {
-        flex: 0.7;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-        
-    .welcome-container-title p {
-        font-size: 2rem !important;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 600;
-    }
-
-    .welcome-container-button {
-        flex: 1.5;
-    }
-
-    .welcome-container-divider {
-        flex: 1;
-    }
 }
 
-.welcome-container{
+.Welcome-container{
     flex: 1;
     display: flex;
     flex-direction: column;
     color: white;
     background: rgb(0,0,0, 0.5);
-}
-
-.special-font {
-    font-family: 'Yesteryear', cursive !important;
 }

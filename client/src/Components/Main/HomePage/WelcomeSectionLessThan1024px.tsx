@@ -6,37 +6,22 @@ const WelcomeSectionLessThan1024px = () => {
         <>
             <section className='container'>
 
-                <div className="welcome">
-                    <div className="welcome-container">
-                        <div className="text">
-                            <div className='welcome-container-message'>
-                                <p className='special-font'>Delightful Experience</p>
-                            </div>
-                            <div className='welcome-container-title'>
-                                <p>Welcome to "Deeplight Restaurant"</p>
-                            </div>
-                            <div className='welcome-container-button'>
+                <div className="Welcome">
+                    <div className="Welcome-container">
+                        <div className="Welcome-content content-1">
+                            <p>Delightful Experience</p>
+                        </div>
+                        <div className="Welcome-content content-2">
+                            <p>Welcome to "Deeplight Restaurant"</p>
+                        </div>
+                        <div className="Welcome-content content-3">
+                            <div>
                                 <button>Reservation</button>
                             </div>
-                            <div className='welcome-container-divider'>
-                                <p>Hello</p>
-                            </div>
                         </div>
-                    </div>
-                </div>
-
-                <div className="welcome-2">
-                    <div className='welcome-container-message'>
-                        <p className='special-font'>Delightful Experience</p>
-                    </div>
-                    <div className='welcome-container-title'>
-                        <p>Welcome to "Deeplight Restaurant"</p>
-                    </div>
-                    <div className='welcome-container-button'>
-                        <button>Reservation</button>
-                    </div>
-                    <div className='welcome-container-divider'>
-                        <p>Hello</p>
+                        <div className="Welcome-content content-4">
+                            <p>Hello</p>
+                        </div>
                     </div>
                 </div>
             </section>       
